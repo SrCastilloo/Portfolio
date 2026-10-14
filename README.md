@@ -1,6 +1,6 @@
 # Daniel Castillo · Portfolio
 
-Portfolio estático, adaptable y sin dependencias de compilación. El contenido parte del currículum facilitado por Daniel. Las ilustraciones son conceptos visuales, no capturas de los productos.
+Portfolio estático, adaptable y sin dependencias de compilación.ç
 
 ## Edición
 
