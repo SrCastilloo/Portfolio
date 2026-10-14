@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1000" viewBox="0 0 900 1000" fill="none">
+  <defs>
+    <linearGradient id="metal" x1="-28" y1="-70" x2="31" y2="-70" gradientUnits="userSpaceOnUse"><stop stop-color="#151d22"/><stop offset=".24" stop-color="#586269"/><stop offset=".4" stop-color="#c1c7c1"/><stop offset=".48" stop-color="#646e73"/><stop offset=".78" stop-color="#242f35"/><stop offset="1" stop-color="#121a1e"/></linearGradient>
+    <linearGradient id="palm" x1="321" y1="490" x2="605" y2="707" gradientUnits="userSpaceOnUse"><stop stop-color="#738079"/><stop offset=".16" stop-color="#374348"/><stop offset=".55" stop-color="#1c272d"/><stop offset="1" stop-color="#0c1317"/></linearGradient>
+    <linearGradient id="wrist" x1="364" y1="800" x2="529" y2="831" gradientUnits="userSpaceOnUse"><stop stop-color="#10191d"/><stop offset=".4" stop-color="#6f7a76"/><stop offset=".53" stop-color="#b6bcb4"/><stop offset=".65" stop-color="#364347"/><stop offset="1" stop-color="#0c1418"/></linearGradient>
+    <radialGradient id="joint"><stop stop-color="#c6cbc1"/><stop offset=".16" stop-color="#6b7878"/><stop offset=".24" stop-color="#10191d"/><stop offset=".5" stop-color="#26353c"/><stop offset=".64" stop-color="#72807e"/><stop offset=".73" stop-color="#1b282e"/><stop offset="1" stop-color="#0b1216"/></radialGradient>
+    <pattern id="mesh" width="9" height="9" patternUnits="userSpaceOnUse"><path d="M0 9 9 0M-3 3 3-3M6 12l6-6" stroke="#c5cbbf" stroke-opacity=".12" stroke-width=".7"/></pattern>
+    <g id="shaft">
+      <path d="M-24-8-21-128Q-20-140-10-144H13Q22-140 24-129L27-12 17 1H-13Z" fill="#10191e" stroke="#84918b" stroke-width="1.1"/>
+      <path d="M-24-8-21-128-9-139 10-140 17-129 18-14 8-2H-13Z" fill="url(#metal)" stroke="#a0aaa0" stroke-width=".8"/>
+      <path d="M-13-22-12-122M11-21 10-123" stroke="#c7cdc0" stroke-opacity=".47" stroke-width="1.1"/>
+      <path d="M-5-31-5-113Q-5-119 0-119H4V-31Z" fill="#0b1216" stroke="#85928b" stroke-width=".8"/>
+      <path d="M0-38v-72" stroke="#fa6a3b" stroke-width="2.6"/>
+      <path d="M20-29 21-114M-20-24-18-116" stroke="#060d11" stroke-width="3"/>
+      <path d="M-12-128H10M-14-18H12" stroke="#d9ded4" stroke-opacity=".7"/>
+      <circle cx="-8" cy="-132" r="2.2" fill="#0d161b" stroke="#9ba59c" stroke-width=".7"/><circle cx="7" cy="-14" r="2.2" fill="#0d161b" stroke="#9ba59c" stroke-width=".7"/>
+    </g>
+    <g id="joint-band">
+      <path d="M-25-13Q0-24 26-12V10Q0 22-25 10Z" fill="#10191d" stroke="#83948b" stroke-width="1"/>
+      <path d="M-25-7Q0 4 26-6M-25-1Q0 10 26 0M-25 5Q0 16 26 6" stroke="#566660" stroke-width="2"/>
+      <ellipse cx="0" cy="-12" rx="25" ry="9" fill="#29373c" stroke="#a5b0a5" stroke-width=".8"/>
+      <path d="M-17-8Q0-1 18-8" stroke="#fa6a3b" stroke-width="2"/>
+      <circle cx="24" cy="1" r="7" fill="url(#joint)" stroke="#829087" stroke-width=".8"/>
+    </g>
+    <g id="tip">
+      <path d="M-23-6-20-57Q-18-85 0-88 20-87 23-61L26-9Q3 5-23-6Z" fill="url(#metal)" stroke="#a1ada1" stroke-width="1"/>
+      <path d="M-11-13-9-56Q-8-71 0-74 11-70 11-56L12-15" stroke="#9ba79d" stroke-width=".9"/>
+      <path d="M-5-19-4-53Q-3-62 1-64 5-61 5-53L6-20" fill="#111b1f" stroke="#5f7169" stroke-width=".7"/>
+      <path d="M-13-63Q0-72 14-63M-14-57Q0-65 15-57M-15-51Q0-59 16-51" stroke="#111b1f" stroke-width="2.3"/>
+      <path d="M-12-8Q0-2 13-8" stroke="#fa6a3b" stroke-width="2.2"/>
+    </g>
+    <g id="bolt"><circle r="7" fill="#0b1519" stroke="#8c9c90" stroke-width="1"/><circle r="3.8" fill="#465750"/><path d="m-2-1 2-1.2L2-1v2L0 2.2-2 1Z" fill="#101b1e"/></g>
+  </defs>
+
+  <g stroke="#c7d0c4" stroke-opacity=".12" stroke-width="1">
+    <ellipse cx="456" cy="524" rx="335" ry="350" transform="rotate(-24 456 524)" stroke-dasharray="2 9"/>
+    <ellipse cx="456" cy="524" rx="281" ry="310" transform="rotate(-24 456 524)"/>
+    <ellipse cx="456" cy="524" rx="345" ry="125" transform="rotate(-34 456 524)"/>
+    <path d="M101 524h710M456 151v753" stroke-dasharray="4 10"/>
+    <path d="M114 506v36m-18-18h36M774 506v36m-18-18h36M438 170h36m-18-18v36" stroke-opacity=".4"/>
+  </g>
+  <g fill="#fa6a3b"><circle cx="184" cy="363" r="3"/><circle cx="757" cy="683" r="3"/><circle cx="572" cy="211" r="2.4"/></g>
+
+  <!-- Each digit is built from independently articulated phalanges. -->
+  <g transform="translate(338 533) rotate(-19)">
+    <use href="#shaft" transform="scale(.83 .76)"/>
+    <use href="#joint-band" transform="translate(0 -116) scale(.84)"/>
+    <use href="#shaft" transform="translate(0 -123) rotate(-5) scale(.78 .55)"/>
+    <use href="#joint-band" transform="translate(-7 -211) rotate(-5) scale(.78)"/>
+    <use href="#tip" transform="translate(-8 -222) rotate(-6) scale(.78 .8)"/>
+  </g>
+  <g transform="translate(405 493) rotate(-7)">
+    <use href="#shaft" transform="scale(.98 .98)"/>
+    <use href="#joint-band" transform="translate(0 -150) scale(.98)"/>
+    <use href="#shaft" transform="translate(0 -160) rotate(2) scale(.91 .66)"/>
+    <use href="#joint-band" transform="translate(4 -263) rotate(2) scale(.91)"/>
+    <use href="#tip" transform="translate(5 -275) rotate(5) scale(.89 .97)"/>
+  </g>
+  <g transform="translate(478 479) rotate(8)">
+    <use href="#shaft" transform="scale(1.03 1.06)"/>
+    <use href="#joint-band" transform="translate(0 -160) scale(1.03)"/>
+    <use href="#shaft" transform="translate(0 -171) rotate(5) scale(.98 .73)"/>
+    <use href="#joint-band" transform="translate(9 -283) rotate(5) scale(.98)"/>
+    <use href="#tip" transform="translate(11 -296) rotate(10) scale(.95 1.03)"/>
+  </g>
+  <g transform="translate(545 506) rotate(24)">
+    <use href="#shaft" transform="scale(1.02 .95)"/>
+    <use href="#joint-band" transform="translate(0 -145) scale(1.02)"/>
+    <use href="#shaft" transform="translate(0 -157) rotate(9) scale(.94 .63)"/>
+    <use href="#joint-band" transform="translate(14 -254) rotate(9) scale(.94)"/>
+    <use href="#tip" transform="translate(17 -265) rotate(14) scale(.91 .93)"/>
+  </g>
+
+  <!-- The offset shell edge reveals the depth of the metacarpal housing. -->
+  <path d="M322 532 351 491 408 461 481 450 548 479Q584 501 602 548L622 636Q620 680 582 720L528 774 398 795 345 748 311 638Q300 588 322 532Z" fill="#080f13" stroke="#596e65" stroke-width="1.5"/>
+  <path d="m322 532 31-26 59-29 67-9 62 27Q574 516 589 557L608 638Q605 673 571 707L518 756 396 779 359 733 323 631Q309 580 322 532Z" fill="url(#palm)" stroke="#adb8aa" stroke-width="1.25"/>
+  <path d="m396 779 122-23 53-49 11 13-54 54-130 21Z" fill="#121e23" stroke="#5c7167" stroke-width=".9"/>
+  <path d="m328 544 33-23 52-25 62-8 56 24 35 45 15 70-33 67-43 42-94 17-32-35-32-93Z" fill="url(#mesh)" stroke="#657a6c" stroke-width=".75"/>
+
+  <!-- Tendon channels and replaceable palm plates. -->
+  <path d="M353 538 377 583 420 733M409 510 420 579 445 727M477 498 471 579 471 722M537 525 515 587 495 717" stroke="#090f13" stroke-width="13" stroke-linecap="round"/>
+  <path d="M350 537 374 583 417 731M406 510 417 579 442 725M474 498 468 579 468 720M534 525 512 587 492 715" stroke="#b8c3b2" stroke-opacity=".75" stroke-width="2" stroke-linecap="round"/>
+  <path d="M357 538 381 583 424 730M413 510 424 579 449 724M481 498 475 579 475 719M541 525 519 587 499 714" stroke="#526a5d" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="m363 583 45-17 23 14-10 50-27 9-20-19Z" fill="#25363b" stroke="#9ba99b" stroke-width="1"/>
+  <path d="m445 560 38-4 22 24-14 54-31 10-20-32Z" fill="#2b3b40" stroke="#a9b5a6" stroke-width="1"/>
+  <path d="m374 590 29-11 12 7-6 32-11 5-13-13Z" fill="#101b20" stroke="#68816e" stroke-width=".8"/>
+  <path d="m454 572 23-4 14 15-10 38-15 4-13-18Z" fill="#101b20" stroke="#68816e" stroke-width=".8"/>
+  <path d="m382 589 15-5 9 29-11 5ZM461 577l12-3 9 11-8 28-9 3Z" fill="#fa6a3b"/>
+  <path d="m383 658 28-10 16 42-20 8ZM443 652l27-5 5 42-24 5ZM499 648l24-9-8 37-20 16Z" fill="#121e23" stroke="#697e6d" stroke-width=".9"/>
+  <path d="m388 666 18-6m-15 14 18-6m-15 14 18-6m38-14 15-3m-14 11 15-3m-14 11 15-3m40-24 12-5m-14 14 12-5" stroke="#94a28d" stroke-width="1"/>
+  <g><use href="#bolt" x="338" y="561"/><use href="#bolt" x="369" y="706"/><use href="#bolt" x="404" y="752"/><use href="#bolt" x="508" y="737"/><use href="#bolt" x="579" y="635"/><use href="#bolt" x="561" y="551"/><use href="#bolt" x="483" y="482"/></g>
+
+  <!-- Thumb assembly rotates from a separate saddle joint. -->
+  <path d="M558 604 587 564Q609 545 638 555L666 581 661 618 610 665 571 662Z" fill="#17262c" stroke="#93a58e" stroke-width="1.3"/>
+  <ellipse cx="600" cy="604" rx="37" ry="46" transform="rotate(37 600 604)" fill="url(#joint)" stroke="#9dab99" stroke-width="1.2"/>
+  <ellipse cx="600" cy="604" rx="22" ry="29" transform="rotate(37 600 604)" stroke="#fa6a3b" stroke-width="2"/>
+  <g transform="translate(626 590) rotate(54)">
+    <use href="#shaft" transform="scale(1.16 .71)"/>
+    <use href="#joint-band" transform="translate(0 -113) scale(1.12)"/>
+    <use href="#tip" transform="translate(1 -126) rotate(-16) scale(1.08 1.12)"/>
+  </g>
+  <circle cx="600" cy="604" r="9" fill="#17242a" stroke="#bac3af" stroke-width="1.1"/><path d="m596 603 4-3 4 3v4l-4 2-4-2Z" fill="#87977f"/>
+
+  <!-- A compact bearing and fluted cuff anchor the hand. -->
+  <path d="m398 768 117-23 20 30-3 50-108 22-30-28Z" fill="#111c21" stroke="#9da997" stroke-width="1.2"/>
+  <path d="m401 778 119-23M401 790l124-24M401 802l127-25M407 815l121-25M420 831l108-22" stroke="#51665a" stroke-width="5"/>
+  <path d="m402 785 119-23M405 800l120-24M415 818l110-22" stroke="#a7b49e" stroke-width="1"/>
+  <path d="m424 837 108-22 9 91-98 33-41-29Z" fill="url(#wrist)" stroke="#a2ad9c" stroke-width="1.2"/>
+  <path d="m438 846 79-18 7 65-74 24Z" fill="#162328" stroke="#6e836f" stroke-width=".9"/>
+  <path d="m447 858 60-14 3 40-57 17Z" fill="#101a1f" stroke="#adba9f" stroke-width=".8"/>
+  <path d="m452 863 8-2 3 29-8 2Zm17-4 8-2 3 28-8 3Zm17-4 8-2 3 28-8 3Z" fill="#fa6a3b"/>
+  <path d="m402 910 41 29 98-33M408 916l36 28 94-31" stroke="#5b7361" stroke-width="1.3"/>
+
+  <g stroke="#c0ceba" stroke-width=".8" stroke-opacity=".4"><path d="m354 585-130-35h-56M542 850l94 29h82M614 605l113 53h68"/><circle cx="354" cy="585" r="3"/><circle cx="542" cy="850" r="3"/><circle cx="614" cy="605" r="3"/></g>
+  <g fill="#d9ded4" fill-opacity=".45"><circle cx="168" cy="550" r="2"/><circle cx="718" cy="879" r="2"/><circle cx="795" cy="658" r="2"/></g>
+</svg>
