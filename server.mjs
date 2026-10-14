@@ -12,4 +12,4 @@ http.createServer(async (req, res) => {
     const body = await readFile(target);
     res.writeHead(200, { 'Content-Type': types[path.extname(target)] || 'application/octet-stream', 'Cache-Control':'no-cache' }); res.end(body);
   } catch { res.writeHead(404).end('Not found'); }
-}).listen(4173, '127.0.0.1', () => console.log('Local: http://localhost:4173'));
+}).listen(4173, '0.0.0.0', () => console.log('Local: http://localhost:4173'));
