@@ -1,16 +1,16 @@
-# Usa una versión ligera de Node.js
-FROM node:18-alpine
+# Node.js LTS. 
+FROM node:24-alpine
 
-# Establece el directorio de trabajo dentro del contenedor
 WORKDIR /app
+ENV NODE_ENV=production
 
-# Copia los archivos de mi proyecto al contenedor
 COPY . .
 
-# RUN npm install
 
+RUN mkdir -p dist \
+    && cp index.html styles.css app.js dist/ \
+    && if [ -d assets ]; then mkdir -p dist/assets && cp -R assets/. dist/assets/; fi
 
 EXPOSE 4173
 
-# Comando para ejecutar el servidor
 CMD ["node", "server.mjs"]
