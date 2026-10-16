@@ -1,0 +1,66 @@
+/* Selector de idioma y descarga del CV. Cargar después de styles.css. */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--muted);
+  font-size: 10px;
+}
+.language-switch button {
+  min-width: 36px;
+  min-height: 44px;
+  padding: 8px;
+  border-radius: 3px;
+  color: #b6beaa;
+  background: transparent;
+  font-size: 11px;
+  font-weight: 600;
+}
+.language-switch button[aria-pressed="true"] { color: var(--orange); }
+.language-switch button:hover { background: #ffffff0b; }
+.cv-download {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  margin-top: 18px;
+  padding: 10px 0;
+  font-size: 12px;
+}
+.cv-download:hover .cv-label { text-decoration: underline; text-underline-offset: 4px; }
+.cv-download > [aria-hidden] { color: var(--orange); font-size: 18px; }
+.cv-format { color: #a7afa0; font-size: 9px; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+html[lang="en"] .hero h1 { font-size: clamp(62px, 6.65vw, 105px); }
+html[lang="en"] .about h2 { font-size: clamp(42px, 4.5vw, 66px); }
+@media (max-width: 1050px) {
+  .header-actions { gap: 12px; }
+  .desktop-nav { gap: 24px; }
+}
+@media (max-width: 760px) {
+  .header-actions { gap: 14px; }
+  .header-actions .header-contact { display: none; }
+  .language-switch { gap: 0; }
+  .language-switch button { min-width: 32px; padding: 6px; }
+  html[lang="en"] .hero h1 { font-size: clamp(42px, 13.2vw, 80px); }
+  html[lang="en"] .about h2 { font-size: clamp(41px, 11.5vw, 54px); }
+}
+@media print {
+  .header-actions, .cv-download, .language-status { display: none !important; }
+}
